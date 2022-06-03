@@ -1,1 +1,30 @@
-<p>hero-form works!</p>
+<div class="container">
+    
+    <div class="forms-group">
+    <label for="power">POWER RANGERS</label>
+    <input type="text" required>
+    <input type="text">
+        <select id="power" class="form-control" required>
+            <option *ngFor="let i of powers"  [value]="i">{{i}}</option>
+        </select>
+    </div>
+</div>
+
+
+
+<!-- 
+<div class="container">
+    <div [hidden]="submitted">
+      <h1>Hero Form</h1>
+      <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name"
+                 required
+                 [(ngModel)]="model.name" name="name"
+                 #name="ngModel">
+          <div [hidden]="name.valid || name.pristine"
+               class="alert alert-danger">
+            Name is required
+          </div>
+        </div> -->

@@ -6,9 +6,9 @@ import { Hero } from '../hero';
   styleUrls: ['./hero-form.component.css']
 })
 export class HeroFormComponent implements OnInit {
-  power=['Really Smart','Fantastic one','Nothing Todo','Go mahn...']
+  powers=['Really Smart','Fantastic one','Nothing Todo','Go mahn...']
 
-  model =  new Hero(10,'Ronalmdo',this.power[3],'Hooohoooo')
+  model =  new Hero(10,'Ronalmdo',this.powers[3],'Hooohoooo')
   isSubmitted= false;
 
   onSubmit(){
