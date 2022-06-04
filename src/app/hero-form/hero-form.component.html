@@ -1,12 +1,17 @@
 <div class="container">
-    
+  <h1>Hero Form</h1>
     <div class="forms-group">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required>
     <label for="power">POWER RANGERS</label>
     <input type="text" required>
     <input type="text">
         <select id="power" class="form-control" required>
             <option *ngFor="let i of powers"  [value]="i">{{i}}</option>
         </select>
+  </form>
+
     </div>
 </div>
 
